@@ -1,0 +1,13 @@
+Character
+SkinName = soapthehedge
+DisplayName = 
+TagTextColor = SKINCOLOR_BLUE
+TagOutlineColor = SKINCOLOR_ORANGE
+NameTag = CHRTAG
+OppositeColor = SKINCOLOR_RED
+PlayerText = Soap is all about speed and verticality! With his vertical thok and high jump height, he can jump over (or break) any wall in his way!
+
+^1Jump Thok:^0 Double jump to gain speed, distance, AND height to overcome obstacles!
+^1Superdash:^0 Charge Soap's spindash and blast off with insane speed!
+^1Dash Mode:^0 Keep moving at high speeds to increase his stats! Run long enough and you'll enter Mach 4, which makes you invulnerable!
+#

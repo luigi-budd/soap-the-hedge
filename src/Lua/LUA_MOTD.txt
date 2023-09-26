@@ -1,0 +1,25 @@
+addHook("PlayerSpawn", function(p)
+	if p.discord == nil then
+		p.discord = true
+	end
+end)
+
+hud.add(function(v, p)
+	if not netgame
+		return
+	end
+	
+	if p.discord == true
+		v.drawString(160, -12, 'discord.gg/JY6ukFuQJV',V_ALLOWLOWERCASE|V_30TRANS, "thin-center")
+	end
+end)
+
+COM_AddCommand("displayInvite", function(p)
+	if p.valid
+		if p.discord
+			p.discord = false
+		else
+			p.discord = true
+		end
+	end
+end, COM_ADMIN)

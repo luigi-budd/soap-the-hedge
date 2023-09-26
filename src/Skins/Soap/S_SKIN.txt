@@ -1,0 +1,34 @@
+name = soapthehedge
+RealName = Soap
+NameTag = CHRTAG
+HudName = SOAP
+
+flags = SF_NOSUPERJUMPBOOST|SF_HIRES|SF_DASHMODE|SF_CANBUSTWALLS|SF_FASTEDGE|SF_RUNONWATER|SF_NOSHIELDABILITY
+
+
+ability = CA_JUMPTHOK
+ability2 = CA2_SPINDASH
+
+prefcolor = Soapy_Green
+Supercolor = Sky
+
+jumpfactor = 1.75
+
+highresscale = 0.25
+shieldscale = 1.25
+
+thokitem = MT_NULL
+spinitem = MT_NULL
+revitem = MT_NULL
+followitem = MT_NULL
+
+
+dsjump = dsajum
+dsaltow4 = dsslip
+dsaltdi4 = dshlds
+
+runspeed = 58
+accelstart = 110
+mindash = 100
+maxdash = 150
+normalspeed = 64

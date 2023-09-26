@@ -1,0 +1,16 @@
+Lump DEATHM
+Title = Pizza_Tower:_Scoutdigo_Mod:_Revenge_of_the_Killer_Pizza
+Alttitle = Yellow_Demon_BGM
+Authors = The_Consul
+Soundtestpage = 1
+Soundtestcond = 0
+BPM = 165
+
+Lump YFASYD 
+Title = Pizza_Tower:_Your_Fat_Ass_Slows_You_Down
+Alttitle = Yellow_Demon_Game_Over
+Authors = Mr._Sauceman
+Stoppingtime = 5120
+Soundtestpage = 1
+Soundtestcond = 0
+BPM = 115

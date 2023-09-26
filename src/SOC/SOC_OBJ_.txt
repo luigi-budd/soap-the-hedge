@@ -1,0 +1,209 @@
+Freeslot
+MT_SOAPYTRAIL
+S_SOAPYTRAIL
+S_SOAPYFORCEFIELD
+S_SOAPPLUS10TEXT
+S_SOAPPLUS100TEXT
+S_SOAPBUBBLESMALL
+S_SOAPBUBBLEMEDIUM
+S_SOAP_BANANA_PEEL
+S_SOAP_BOOMBOX
+S_SOAP_BOOMBOX_NOTE
+S_SOAPMINUS50TEXT
+
+Thing MT_SOAPYTRAIL
+MapThingNum = -1
+SpawnState = S_SOAPYTRAIL
+SpawnHealth = 1
+Radius = 178*FRACUNIT
+Height = 356*FRACUNIT
+Flags = MF_NOBLOCKMAP|MF_NOCLIP|MF_NOCLIPHEIGHT|MF_NOGRAVITY|MF_SCENERY
+
+Frame S_SOAPYTRAIL
+SpriteName = SPR_STHK
+SpriteFrame = A
+Duration = 8
+Next = S_NULL
+
+Thing MT_SOAPYFORCEFIELD
+MapThingNum = -1
+SpawnState = S_SOAPYFORCEFIELD
+SpawnHealth = 1
+#"i thought this was a little too tall
+#"356 FRACs!?? am i crazy?? Yes.
+Radius = 66*FRACUNIT
+Height = 66*FRACUNIT
+DispOffset = 8
+Flags = MF_NOBLOCKMAP|MF_NOCLIP|MF_NOCLIPHEIGHT|MF_NOGRAVITY|MF_SCENERY
+
+Frame S_SOAPYFORCEFIELD
+SpriteName = SPR_SFFS
+SpriteFrame = A|FF_ANIMATE
+Duration = -1
+
+#"Score text
+Thing MT_SOAPPLUS10TEXT
+MapThingNum = -1
+SpawnState = S_SOAPPLUS10TEXT
+SpawnHealth = 1
+Radius = 34*FRACUNIT
+Height = 34*FRACUNIT
+DispOffset = 9
+Flags = MF_NOBLOCKMAP|MF_NOCLIP|MF_NOCLIPHEIGHT|MF_NOGRAVITY|MF_SCENERY
+
+Frame S_SOAPPLUS10TEXT
+SpriteName = SPR_P10T
+SpriteFrame = A
+Duration = 40
+Next = S_NULL
+
+
+Thing MT_SOAPPLUS100TEXT
+MapThingNum = -1
+SpawnState = S_SOAPPLUS100TEXT
+SpawnHealth = 1
+Radius = 34*FRACUNIT
+Height = 34*FRACUNIT
+DispOffset = 1
+Flags = MF_NOBLOCKMAP|MF_NOCLIP|MF_NOCLIPHEIGHT|MF_NOGRAVITY|MF_SCENERY
+
+Frame S_SOAPPLUS100TEXT
+SpriteName = SPR_P100
+SpriteFrame = A
+Duration = 40
+Next = S_NULL
+
+Thing MT_SOAPMINUS50TEXT
+MapThingNum = -1
+SpawnState = S_SOAPMINUS50TEXT
+SpawnHealth = 1
+Radius = 34*FRACUNIT
+Height = 34*FRACUNIT
+DispOffset = 1
+Flags = MF_NOBLOCKMAP|MF_NOCLIP|MF_NOCLIPHEIGHT|MF_NOGRAVITY|MF_SCENERY
+
+Frame S_SOAPMINUS50TEXT
+SpriteName = SPR_M50T
+SpriteFrame = A
+Duration = 40
+Next = S_NULL
+
+#"
+
+#"soap bubbles
+Thing MT_SOAPBUBBLESMALL
+MapThingNum = -1
+SpawnState = S_SOAPBUBBLESMALL
+SpawnHealth = 1
+Radius = 34*FRACUNIT
+Height = 34*FRACUNIT
+DispOffset = 1
+Flags = MF_NOBLOCKMAP|MF_NOCLIP|MF_NOGRAVITY
+
+Frame S_SOAPBUBBLESMALL
+SpriteName = SPR_SBBL
+SpriteFrame = A
+Duration = 51
+Next = S_NULL
+
+Thing MT_SOAPBUBBLEMEDIUM
+MapThingNum = -1
+SpawnState = S_SOAPBUBBLEMEDIUM
+SpawnHealth = 1
+Radius = 60*FRACUNIT
+Height = 60*FRACUNIT
+DispOffset = 1
+Flags = MF_NOBLOCKMAP|MF_NOCLIP|MF_NOGRAVITY
+
+Frame S_SOAPBUBBLEMEDIUM
+SpriteName = SPR_SBBL
+SpriteFrame = B
+Duration = 51
+Next = S_NULL
+
+#"
+
+#"lets define the ragdoll thing here
+Thing MT_SOAP_RAGDOLL
+MapThingNum = -1
+SpawnState = S_PLAY_WAIT
+DeathState = S_XPLD1
+SpawnHealth = 1
+Radius = 5*FRACUNIT
+Height = 5*FRACUNIT
+
+Thing MT_SOAP_DEAD_BODY
+MapThingNum = -1
+SpawnState = S_PLAY_WAIT
+SpawnHealth = 1
+Radius = 5*FRACUNIT
+Height = 5*FRACUNIT
+
+#"banana peel!!!
+Thing MT_SOAP_BANANA_PEEL
+MapThingNum = -1
+SpawnState = S_SOAP_BANANA_PEEL
+SpawnHealth = 1
+Radius = 12*FRACUNIT
+Height = 10*FRACUNIT
+Flags = MF_SOLID|MF_SPECIAL|MF_SLIDEME
+
+Thing MT_SOAP_BANANA_PEEL_DEAD
+MapThingNum = -1
+SpawnState = S_SOAP_BANANA_PEEL
+SpawnHealth = 1
+Radius = 12*FRACUNIT
+Height = 10*FRACUNIT
+Flags = MF_NOCLIP|MF_NOCLIPHEIGHT
+
+
+Frame S_SOAP_BANANA_PEEL
+SpriteName = SPR_SBAN
+SpriteFrame = A
+Duration = -1
+
+#"pizza tower boombox
+Thing MT_SOAP_BOOMBOX
+MapThingNum = -1
+SpawnState = S_SOAP_BOOMBOX
+SpawnHealth = 1
+Radius = 12*FRACUNIT
+Height = 10*FRACUNIT
+DispOffset = 3
+Flags = MF_NOCLIP
+
+Frame S_SOAP_BOOMBOX
+SpriteName = SPR_SBB_
+SpriteFrame = A
+Duration = -1
+
+#"boombox notes
+Thing MT_SOAP_BOOMBOX_NOTE
+MapThingNum = -1
+SpawnState = S_SOAP_BOOMBOX_NOTE
+SpawnHealth = 1
+Radius = 12*FRACUNIT
+Height = 10*FRACUNIT
+Flags = MF_NOCLIP|MF_NOCLIPHEIGHT|MF_NOGRAVITY
+
+Frame S_SOAP_BOOMBOX_NOTE
+SpriteName = SPR_SBBN
+SpriteFrame = A
+Duration = -1
+
+#"new afterimages object to make them look nicer
+Thing MT_SOAP_AFTERIMAGE_OBJECT
+MapThingNum = -1
+SpawnState = S_PLAY_WAIT
+SpawnHealth = 1
+Radius = 12*FRACUNIT
+Height = 10*FRACUNIT
+Flags = MF_NOCLIP|MF_NOCLIPHEIGHT|MF_NOGRAVITY|MF_NOBLOCKMAP
+
+Thing MT_SOAP_MOBJHOLDER
+MapThingNum = -1
+SpawnState = S_NULL
+SpawnHealth = 1
+Radius = 12*FRACUNIT
+Height = 10*FRACUNIT
+Flags = MF_SOLID|MF_NOBLOCKMAP
